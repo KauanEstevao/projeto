@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@import url("https://use.typekit.net/huw5brq.css");
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+}
+
+/* 
+  Teko Light
+  font-family: "teko", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+  Teko Regular
+  font-family: "teko", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  Teko Medium
+  font-family: "teko", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  Teko SemiBold
+  font-family: "teko", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+
+  Teko Bold
+  font-family: "teko", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+
+*/
+
+:root{
+  /* Paleta de cores */
+  --cor0:#F2F2F2;
+  --cor1:#A975BF;
+  --cor2:#9B72A6;
+  --cor3:#211026;
+  --cor4:#2a2a2a;
+  --cor5:#0D0D0D;
+
+  /* Fontes */
+  --fonte-destaque:'tekobold', sans-serif;
+  --fonte-texto-padrao:'Roboto', Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: var(--cor4);
+}
+
+header{
+  background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+  color: var(--cor0);
+  text-align: center;
+  padding:5px 0px 10px 0px;
+  min-width: 320px;
+}
+
+header h1{
+  font-family: var(--fonte-destaque);
+}
+
+header > p{
+  margin: 5px;
+  font-family: var(--fonte-destaque);
+  font-weight: bolder;
+}
+
+nav{
+  background-color: var(--cor5);
+  padding-bottom: 10px;
+  text-align: center;
+  min-width: 320px;
+  
+}
+
+nav > a{
+  text-decoration: none;
+  background-color: var(--cor5);
+  color: var(--cor0);
+  padding: 8px 8px;
+  border-radius: 10px;
+  font-family: var(--fonte-destaque);
+  font-weight: bolder;
+}
+
+nav a:hover{
+  background-color: var(--cor4);
+  text-decoration: underline;
+  color: var(--cor2);
+}
+
+main img{
+  margin: 0px 500px;
+  max-width: 50px;
+  display: inline-block;
+}
+
+
+footer{
+  background-color: var(--cor5);
+  color: var(--cor0);
+  text-align: center;
+  padding: 1px;
+}
